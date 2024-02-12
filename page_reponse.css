@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; scroll-behavior: smooth;}
+h1{
+    font-size: large;
+}
+#dommage,span{
+    color: red;
+}
+#un_bon_debut{
+    color:coral;
+}
+#interessant{
+    color:orange;
+}
+#moyenne{
+    color:rgb(154, 154, 18);
+}
+#presque{
+    color:blue;
+}
+#parfait{
+    color: green;
+}
+img{
+    width: 200px;
+}

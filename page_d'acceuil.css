@@ -1,0 +1,52 @@
+/* mettre une grille dans le main avec chaque parti de la grille des
+couleurs suivantes :
+    -violet pour la biographie
+    -bleue ciel, blanc pour le questionnaire 
+    -rouge mais je suis pas sur que ca soit la couleur de l'un de ses albums
+essayer même de mettre directement les covers d'album, et les couleurs
+deviennent le thème de la page concernée */
+
+#acceuil,div
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+nav a,img
+{
+    transition: all 1.5s ease-in-out;
+}
+main>nav h2:first-child, div a:first-child
+{
+    background-color: rgb(149, 20, 149);
+    /* backgroud-image : url(image album robe violet); */
+    /* faire en sorte que l'image et la couleur de fond soit dans la même zone */
+}
+main>nav h2:nth-child(2), div a:nth-child(2)
+{
+    background-color: rgb(129, 220, 227);
+    /* backgroud-image : url(image album 1989); */
+    /* faire en sorte que l'image et la couleur de fond soit dans la même zone */
+}
+nav h2:nth-child(3), div a:last-child
+{
+    background-color: rgb(227, 12, 5);
+    /* backgroud-image : url(image album robe rouge); */
+    /* faire en sorte que l'image et la couleur de fond soit dans la même zone */
+}
+
+img:hover
+{
+    transform: scale(1.5);
+    /*reprendre code martin */
+}
+img:hover
+{
+    transform: scale(0.5);
+    /*reprendre code martin */
+}
+img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*{margin : 0; padding : 0; scroll-behavior: smooth; font-family: cursive;}
+
+/*en-tete*/
+
+header{background-color : rgb(183, 185, 69); text-align : center}
+
+
+
+/* pieds de page */
+
+footer {padding: 0px 0px 10px 0px; background-color : rgb(251, 4, 255)}
+footer nav {
+    text-align : center;
+    padding : 0px 0px 10px 0px;
+}
+
+#null {text-align : right}
+
+footer p {padding : 10px 0px 0px 0px}
+

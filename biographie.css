@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+
+
+ main {
+    background-color: rgb(189, 172, 189);
+    /* aller prendre une pipette pour avoir direct le code de la couleur  */
+} 
+h1,h2,h3{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#general {
+    padding-bottom: 10px;
+}
+
+#vie_personnel, #enfance{
+    display: grid;}
+
+#vie_personnel, #enfance{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+[alt="lpb"],[alt="Taylor Swift in her childhood"]{
+    height: 90%;
+    width: 90%;
+}
+[alt="swift_qui_chante"]{
+    margin-left: 500px;
+    height: 200px;
+    width: 200px;
+}
+
+
