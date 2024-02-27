@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"/>
+		<title>Site création article</title>
+		<link rel ="stylesheet" href="style_site.css"/>
+		<meta name="description" content="Toujours pas de nom"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="icon" type="image/jpg" href="imagepli2.jpg"/>
+	</head>
+
+	<body>
+
+	<div class="card">
+	<div class="container">
+		<div class="screen">
+			<div class="screen__content">
+				<form class="login" action="creation_article.php" method="POST">
+					<div class="login__field">
+						<i class="login__icon fa fa-file-signature"></i>
+						<input type="text" name="Nom_article" class="login__input" placeholder="Nom de l'article">
+					</div>
+
+					<div class="login__field">
+						<i class="login__icon fas fa-coins"></i>
+						<input type="text" name ="prix_article" class="login__input" placeholder="Prix d'achat">
+					</div>
+
+					<div class="login__field">
+						<i class="login__icon fas fa-donate"></i>
+						<input type="text" name="prix_vente" class="login__input" placeholder="Prix de vente">
+					</div>
+
+					<div class="login__field">
+						<i class="login__icon fas fa-truck"></i>
+						<input type="text" name="stock_article" class="login__input" placeholder="Stock">
+					</div>
+					
+					<button class="button login__submit">
+						<span class="button__text">entrer</span>
+						<i class="button__icon fas fa-chevron-right"></i>
+					</button>				
+				</form>
+
+			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>		
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>		
+		</div>
+	</div>
+	</div>
+
+	</body>
+	
+</html>

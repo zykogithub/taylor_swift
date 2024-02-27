@@ -1,0 +1,75 @@
+
+<style type="text/css">
+	div {
+	background-image: url('alibobo2.png');
+	width: 1500px;
+	height : 900px;
+	right: auto;
+	left: auto;
+	}
+</style>
+
+<?php
+  $host = 'localhost';
+  $username = 'root';
+  $password = 'root';
+  $dbname = 'entreprise';
+    
+  $bdd = mysqli_connect($host ,$username, $password, $dbname); 
+
+  if (!$bdd){
+    die("Connexion interrompue : ".mysqli_connect_error());
+  }
+
+  // récupération de tous les clients
+
+  $sql ="SELECT * FROM client";
+  $result=mysqli_query($bdd,$sql);
+  
+  echo "<table>";
+  echo "<tr>";
+  echo "<th>_____Nom du client et prenom _____</th>";
+  echo "<th>Mail du client _______</th>";
+  echo "<th>Mot de passe </th>";
+  echo "</tr>";
+
+
+  if (mysqli_num_rows($result) > 0) {
+
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>";
+        echo "<td>" . $row["Nom_Client"]. "</td>";
+        echo "<td>" . $row["Mail_Client"]. "</td>";
+        echo "<td>" . $row["Mdp_Client"]. "<td>";
+        echo "</tr>";
+      }
+    } else {
+        echo "0 results";
+    }
+    
+    echo "</table>";
+    
+    mysqli_close($bdd);
+?>
+<?php
+$servname = 'localhost';
+$dbname = 'entreprise';
+$user = 'root';
+$pass = 'root';
+
+try{
+    $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
+    $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $sql1 = "INSERT INTO articles(Nom_article,stock_article,prix_article,prix_vente)
+            VALUES('objet_1','2','100','90')";
+    $dbco->exec($sql1);
+    
+    
+    echo 'Entrées ajoutées dans la table';
+}
+
+catch(PDOException $e){
+  echo "Erreur : " . $e->getMessage();
+}
+?>

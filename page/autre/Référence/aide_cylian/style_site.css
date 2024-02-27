@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,1000');
+
+* {
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #bd4e03, #c45c07);	
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #f39455, #f7d2b4);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #e97a30;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #fdfdfd;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #f14f14;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #eb6d07, #f14f14);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #f37b19;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #918f8f;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #ec6002;
+}
+
+.login__submit {
+	background: #f14f14;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #f14f14;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	position: center;
+	vertical-align:middle;
+	width: 100%;
+	color: #fcfafa;
+	box-shadow: 0px 2px 2px #f05e24;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #fff;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 25px;
+	margin-left: auto;
+	color: #fff;
+}
+
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #f14f14;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+  }
+  
+  :root {
+	--card-height: 68vh;
+	--card-width: calc(var(--card-height) / 1.70);
+  }
+  
+  
+  body {
+	min-height: 100vh;
+	background: #e6a57a;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-sizing: border-box;
+  }
+  
+  
+  .card {
+	background: #fbfbfc;
+	width: var(--card-width);
+	height: var(--card-height);
+	padding: 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	color: rgb(88 199 250 / 0%);
+	cursor: pointer;
+	font-family: cursive;
+  }
+  
+  .card:hover {
+	color: rgb(185, 85, 38);
+	transition: color 1s;
+  }
+  .card:hover:before, .card:hover:after {
+	animation: none;
+	opacity: 0;
+  }
+  
+  
+  .card::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 8px;
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #cf7815, #da4703 43%, #eb4d04);
+	  position: absolute;
+	  z-index: -1;
+	  top: -1%;
+	  left: -2%;
+	  animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #f7f9fa, #f7f7f7 43%, #f8f7fa);
+	  opacity: 1;
+	transition: opacity .5s;
+	animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% {
+	  --rotate: 0deg;
+	}
+	100% {
+	  --rotate: 360deg;
+	}
+  }
+  
+  a {
+	color: #0813a8;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 2rem;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"/>
+		<title>Site client</title>
+		<link rel ="stylesheet" href="switch_c_i.css"/>
+		<meta name="description" content="On verra"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+    <body>
+        <div class="page">
+            <div class="box">
+                <div class="creux">
+                    <div id="switcher" class="switcher"></div>
+                    <button type="button" class="pre-switcher" onclick="connex()">Connexion</button>
+                    <button type="button" class="pre-switcher" onclick="enregi()">Inscription</button>
+                </div>
+                <form id="connex" class="contenu" action="creation_client.php" method="POST">
+                    <div class="champ">
+                        <input type="text" required="" class="" name="Nom_client">
+                        <label>Nom</label>
+                    </div>
+                    <div class="champ">
+                        <input type="email" required="" name="Mail_client">
+                        <label>Adresse mail</label>
+                    </div>
+                    <div class="champ">
+                        <input type="password" required="" name="Mdp_client">
+                        <label>Mot de Passe</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Entrer
+                    </button>
+                </form>
+                
+                <form id="enregi" class="contenu">
+                    <div class="champ">
+                        <input type="text" required="" name="Nom_Client">
+                        <label>Nom</label>
+                    </div>
+                    <div class="champ">
+                        <input type="text" required="" name="Prenom_Client">
+                        <label>Prenom</label>
+                    </div>
+                    <div class="champ">
+                        <input type="password" required="" name="Mdp_client">
+                        <label>Mot de Passe</label>
+                    </div>
+                    <div class="champ">
+                        <input type="email" required="" name="Mail_client">
+                        <label>Adresse mail</label>
+                    </div>
+                    <button type="submit" class="submit-btn2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Enregistrer
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            var x = document.getElementById("connex");
+            var y = document.getElementById("enregi");
+            var z = document.getElementById("switcher");
+
+            function enregi(){
+                x.style.left = "-250px"
+                y.style.left = "50%"
+                z.style.left = "110px"
+            } 
+            
+            function connex(){
+                x.style.left = "50%"
+                y.style.left = "750px"
+                z.style.left = "0px"
+            }
+
+        </script>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,337 @@
+.page{
+    background: linear-gradient(#f79a64, #f75c03);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.box{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    background: #fff;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.creux{
+    width: 220px;
+    position: relative;
+    margin: 20px auto;
+    color: aqua;
+    box-shadow: 0px 0px 15px 1px #f75c03;
+    border-radius: 30px;
+    display: flex;
+}
+
+.pre-switcher{
+    padding: 10px 30px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    outline: none;
+    margin-right: -20px;
+}
+
+.switcher{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #f75c03, #f79a64);
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.contenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 370px;
+    height: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(236, 163, 120);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #ee3e08;
+    border-radius: 10px;
+    display: block;
+}
+
+.contenu .champ {
+    position: relative;
+}
+      
+.contenu .champ input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fcfaf9;
+    outline: none;
+    background: transparent;
+}
+
+.contenu .champ label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+      
+.contenu .champ input:focus ~ label,
+.contenu .champ input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ee3e08;
+    font-size: 12px;
+}
+
+
+
+.submit-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ee3e08;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+  }
+  
+  .submit-btn:hover {
+    background: #ee3e08;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ee3e08,
+                0 0 25px #ee3e08,
+                0 0 50px #ee3e08,
+                0 0 100px #ee3e08;
+  }
+  
+  .submit-btn span {
+    position: absolute;
+    display: block;
+  }
+  
+  .submit-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ee3e08);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .submit-btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ee3e08);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .submit-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ee3e08);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .submit-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ee3e08);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .submit-btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ee3e08;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+    bottom: 30px;
+  }
+  
+  .submit-btn2:hover {
+    background: #ee3e08;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ee3e08,
+                0 0 25px #ee3e08,
+                0 0 50px #ee3e08,
+                0 0 100px #ee3e08;
+  }
+  
+  .submit-btn2 span {
+    position: absolute;
+    display: block;
+  }
+  
+  .submit-btn2 span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ee3e08);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .submit-btn2 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ee3e08);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .submit-btn2 span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ee3e08);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .submit-btn2 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ee3e08);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+
+
+
+#enregi {
+  left: 750px;
+}
