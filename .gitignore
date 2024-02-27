@@ -9,5 +9,7 @@
 *.txt
 *.js
 *.PNG
+*.docx
+*.pdf
 /page/animation_debut/animation.css
 /page/animation_debut/animation.html
