@@ -13,3 +13,5 @@
 *.pdf
 /page/animation_debut/animation.css
 /page/animation_debut/animation.html
+#!index.js
+*.vscode
